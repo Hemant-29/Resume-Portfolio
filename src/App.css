@@ -3,7 +3,7 @@
   position: fixed;
   height: 150vh;
   width: 100vw;
-  background-image: url(../src/assets/backgroundBright.jpg);
+  background-image: url(../assets/backgroundBright.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   top: 0px;
