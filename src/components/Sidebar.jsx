@@ -1,6 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
-import userImage from 'src/assets/DSLR.jpg'
+import userImage from '../src/assets/DSLR.jpg'
 
 export default function Sidebar(){
     return(
