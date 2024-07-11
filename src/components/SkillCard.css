@@ -1,0 +1,26 @@
+.skill-card {
+  margin: 20px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.bar-outer {
+  width: 705px;
+  height: 12px;
+  border: 1px solid rgb(145, 145, 145);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.bar-inner {
+  width: 700px;
+  height: 6px;
+  background-image: linear-gradient(
+    to right,
+    rgb(80, 122, 227),
+    rgb(142, 43, 172)
+  );
+  border-radius: 20px;
+}

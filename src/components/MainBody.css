@@ -1,0 +1,37 @@
+.main-body {
+  /* display: inline-block; */
+  scroll-behavior: smooth;
+  position: absolute;
+  width: 75%;
+  right: 0px;
+  top: 75px;
+}
+
+.main-body > h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  padding: 0px 100px 0px 20px;
+}
+
+.main-body > p {
+  font-weight: 200;
+  padding: 0px 100px 0px 20px;
+  font-size: 16px;
+}
+
+.qualifications {
+  display: flex;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

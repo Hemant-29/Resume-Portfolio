@@ -1,0 +1,116 @@
+.ProjectsCard {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin: 20px;
+  width: 400px;
+  height: 600px;
+  flex-shrink: 0;
+}
+
+.details {
+  margin: auto;
+}
+
+.details > a {
+  font-size: 12px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.details > a:hover {
+  transition: all 0.3s;
+  color: #aaaac0;
+}
+
+.name {
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30.26px;
+  text-align: center;
+}
+
+.tech {
+  cursor: pointer;
+  color: #edba22;
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 15.49px;
+  text-align: center;
+  margin-top: 6.2px;
+}
+
+.website {
+  display: block;
+  font-size: 10.24px;
+  font-weight: 400;
+  line-height: 15.36px;
+  text-align: center;
+  color: #f5f5f5;
+  margin-top: 8.8px;
+}
+
+.about-section {
+  color: white;
+  cursor: pointer;
+  margin: 24px 34px;
+  border-radius: 0px 0px 10px 10px;
+  height: 120px;
+}
+
+.about-section > *:hover h4 {
+  font-weight: 600;
+  transform: scale(1.06);
+  transition: all 0.2s;
+}
+
+.about-section > *:hover p {
+  transform: scale(0.95);
+  transition: all 0.2s;
+}
+
+.about-section h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.about-section p {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15.36px;
+  text-align: left;
+}
+
+.image-section {
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+  min-height: 314px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.image-section img {
+  width: 100%;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.image-section img:hover {
+  transform: scale(1.04);
+  transition: all 1s;
+}
+
+.description {
+  background-color: #74747476;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.709);
+  border-radius: 0px 0px 10px 10px;
+  border-top: transparent;
+}

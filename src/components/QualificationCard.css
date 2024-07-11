@@ -1,0 +1,38 @@
+.quali-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(197, 197, 197);
+  width: 200px;
+  height: 180px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(173, 207, 237, 0.08);
+}
+
+.quali-date {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+
+#calender-image {
+  display: inline-block;
+  width: 20px;
+}
+
+#quali-place {
+  /* margin-bottom: auto; */
+  margin: 0px;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#quali-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto 0px;
+}

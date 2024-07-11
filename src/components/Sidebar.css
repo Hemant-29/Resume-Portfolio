@@ -1,0 +1,125 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0px;
+  top: 75px;
+  width: 25%;
+  height: 100vh;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 1em;
+  margin-right: 50px;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+
+.userImage {
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background: linear-gradient(to right bottom, var(--secondary-color), #fff);
+  aspect-ratio: 1;
+  margin-top: 50px;
+  background-origin: border-box; /*This Line does all the magic*/
+}
+
+.userImage img {
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.userImage img:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.basicInfo {
+  text-wrap: nowrap;
+}
+
+.basicInfo > h2 {
+  background: linear-gradient(90deg, var(--secondary-color), #b0b0b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-size: 24px; */
+  font-weight: 600;
+  font-size: 2vw;
+}
+
+.basicInfo > h3 {
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+
+.basicInfo > * {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.Experience p {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.SocialIcons {
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* padding: 10px 10%; */
+  justify-content: center;
+  gap: 5px;
+}
+
+.social--icons {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s;
+  border-radius: 12px;
+}
+
+.social--icons:hover {
+  width: 42px;
+  height: 42px;
+  transition: all 0.3s;
+}
+
+#linkedin:hover {
+  background-color: #0a66c2;
+}
+#github:hover {
+  background-color: rgb(255, 255, 255);
+}
+#email:hover {
+  background-color: #d8be14;
+}
+#twitter:hover {
+  background-color: #fff;
+}
+
+#contactMe {
+  background-color: var(--secondary-color);
+  min-width: 128px;
+  width: 70%;
+  border-radius: 50px;
+  margin-top: 20px;
+  text-wrap: nowrap;
+  transition: all 0.5s;
+}
+
+#contactMe a {
+  color: white;
+}
+
+#contactMe:hover {
+  transform: scale(0.9);
+  background-color: #c87df6;
+  transition: all 0.5s;
+}
