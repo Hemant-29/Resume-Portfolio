@@ -4,6 +4,8 @@ import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import MainBody from './components/MainBody'
 import './index.css'
+import backgroundImageDark from './assets/backgroundDark.jpg'
+import backgroundImageLight from './assets/backgroundBright.jpg'
 
 function App() {
   const [darkMode,setDarkMode] = React.useState(false);
@@ -32,12 +34,12 @@ function App() {
   useEffect(() => {
     let background = document.querySelector(".fixedBackground");
     if(darkMode){
-      background.style.backgroundImage = `url(src/assets/backgroundDark.jpg)`;
+      background.style.backgroundImage = `url(${backgroundImageDark})`;
       document.documentElement.style.setProperty('--font-color', '#ffffff');
       document.documentElement.style.setProperty('--secondary-color', '#bf85d6');
     }
     else{
-      background.style.backgroundImage = `url(src/assets/backgroundBright.jpg)`;
+      background.style.backgroundImage = `url(${backgroundImageLight})`;
       document.documentElement.style.setProperty('--font-color', '#000000');
       document.documentElement.style.setProperty('--secondary-color', '#567da6');
     }
