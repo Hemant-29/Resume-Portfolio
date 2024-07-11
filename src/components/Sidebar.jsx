@@ -1,12 +1,13 @@
 import React from 'react'
 import './Sidebar.css'
+import userImage from 'src/assets/DSLR.jpg'
 
 export default function Sidebar(){
     return(
         <div className="Sidebar">
             
             <div className='userImage'>
-                <img src="src\assets\DSLR.jpg" alt="User Image" />
+                <img src={userImage} alt="User Image" />
             </div>
             <div className='basicInfo'>
                 <h2>Hemant Bagaria</h2>
