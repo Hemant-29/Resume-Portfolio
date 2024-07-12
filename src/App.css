@@ -1,12 +1,26 @@
 .fixedBackground {
+  display: flex;
   overflow: auto;
   position: fixed;
-  height: 150vh;
-  width: 100vw;
+  height: 1000px;
+  width: 100%;
   background-image: url(../assets/backgroundBright.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 0%;
   top: 0px;
-  right: 0px;
+  left: 0px;
   z-index: -10;
+}
+
+@media (max-width: 1000px) {
+  .fixedBackground {
+    height: 1150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .fixedBackground {
+    height: 1250px;
+  }
 }

@@ -1,23 +1,31 @@
 .main-body {
-  /* display: inline-block; */
+  display: inline-block;
   scroll-behavior: smooth;
   position: absolute;
   width: 75%;
   right: 0px;
   top: 75px;
+  overflow-x: hidden;
 }
 
-.main-body > h2 {
+.main-body-relative {
+  position: relative;
+  width: 100%;
+  padding: 2% 5% 5% 5%;
+}
+
+.main-body-relative > h2 {
   font-size: 32px;
   font-weight: 500;
   color: var(--secondary-color);
-  padding: 0px 100px 0px 20px;
+  /* padding: 0px 100px 0px 20px; */
 }
 
-.main-body > p {
+.main-body-relative > p {
   font-weight: 200;
-  padding: 0px 100px 0px 20px;
+  padding: 0px 10% 0px 2%;
   font-size: 16px;
+  text-align: justify;
 }
 
 .qualifications {
@@ -27,11 +35,27 @@
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 90%;
 }
 
 @media (max-width: 1000px) {
   .project-container {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-body {
+    position: relative;
+    width: 100%;
+  }
+  .main-body-relative {
+    position: relative;
+    width: 97vw;
+    padding: 0px;
+    padding: 5%;
+    box-sizing: border-box;
   }
 }

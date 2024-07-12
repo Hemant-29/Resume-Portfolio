@@ -11,13 +11,13 @@ export default function Header(props) {
   useEffect(() => {
     setCircleStyle((oldStyle) => ({
       ...oldStyle,
-      left: props.darkMode ? "25px" : "48px",
+      left: props.darkMode ? "7px" : "30px",
     }));
   }, [props.darkMode]);
 
   return (
     <header className="Header">
-      <h1>Hemant Bagaria</h1>
+      <h1 id="PersonName">Hemant Bagaria</h1>
       <nav className="navButtons">
         <li>
           <button onClick={()=>{props.goToFunction(".qualifications")}}>Education</button>

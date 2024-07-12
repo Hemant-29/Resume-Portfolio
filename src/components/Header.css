@@ -3,7 +3,7 @@
   align-items: center;
   /* justify-content: space-between;   */
   width: 100vw;
-  gap: 40px;
+  gap: 2%;
   height: 75px;
   position: fixed;
   top: 0px;
@@ -12,21 +12,26 @@
   border-bottom: 1px solid white;
 }
 
-h1 {
+#PersonName {
   margin: 0px;
   padding: 11px 24px;
-  font-size: 36px !important;
+  font-size: 36px;
   font-weight: 500;
   color: var(--secondary-color);
   text-wrap: nowrap;
 }
 
 .toggle {
-  margin: 0px 20px;
+  position: relative;
+  display: flex;
+  margin: 0px;
+  margin-right: 30px;
+  padding: 0px;
   background-color: transparent !important;
+  align-items: center;
 }
 
-nav {
+.navButtons {
   display: flex;
   gap: 50px;
   list-style-type: none;
@@ -38,16 +43,9 @@ nav {
   color: var(--secondary-color);
 }
 
-.toggle {
-  margin: 0px;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
 #toggle--circle {
   position: absolute;
-  left: 25px;
+  left: 40px;
   transition: all 0.35s;
 }
 
@@ -57,4 +55,32 @@ nav {
 
 #toggle--rect rect {
   stroke: var(--secondary-color);
+}
+
+@media (max-width: 1000px) {
+  .navButtons {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navButtons {
+    display: none;
+  }
+  .toggle {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .Header {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  #PersonName {
+    font-size: 8vw;
+    padding: 0px 10px;
+  }
 }
