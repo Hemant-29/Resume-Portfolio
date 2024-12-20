@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import React from "react";
-import './ProjectsCard.css'
+import "./ProjectsCard.css";
 
 function ProjectsCard(props) {
   return (
@@ -13,7 +13,7 @@ function ProjectsCard(props) {
           <h2 className="project--name">{props.name}</h2>
           <h3 className="project--tech">{props.tech}</h3>
           <a href={props.website} target="_blank" className="project--website">
-            Hosted Link
+            Link to the Project
           </a>
         </div>
 
@@ -21,9 +21,7 @@ function ProjectsCard(props) {
           <div className="about-section--about">
             <h4>About</h4>
           </div>
-          <div>
-            
-          </div>
+          <div></div>
           <div className="project--about-section--p">
             <p>{props.aboutText}</p>
           </div>

@@ -16,7 +16,7 @@ function App() {
   }
 
   // Define scrollTo function to be passed in props
-  const [scrollTo, setScrollTo]= React.useState(".main-body");
+  const [scrollTo, setScrollTo]= React.useState(".Sidebar");
   function changeScrollTo(classname) {
     setScrollTo(prevScrollTo => {return classname});
   }
@@ -26,7 +26,7 @@ function App() {
     let background = document.querySelector(".fixedBackground");
     function handleScroll() {
       const scrollValueFromTop = window.scrollY;
-      background.style.top = `${-scrollValueFromTop * 0.15}px`; // Adjust multiplier for desired parallax effect
+      background.style.top = `${-scrollValueFromTop * 0.10}px`; // Adjust multiplier for desired parallax effect
     }
 
     window.addEventListener("scroll", handleScroll);

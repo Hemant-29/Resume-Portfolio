@@ -33,7 +33,7 @@
 }
 
 .project--details > a {
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
   color: white;
   text-decoration: none;
@@ -41,7 +41,7 @@
 
 .project--details > a:hover {
   transition: all 0.3s;
-  color: #aaaac0;
+  color: #0b0b9e;
 }
 
 .project--name {
@@ -78,7 +78,14 @@
   cursor: pointer;
   margin: 24px 34px;
   height: 120px;
+  max-height: 120px;
   overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.project--about-section:hover {
+  height: auto;
+  max-height: 1200px;
 }
 
 .project--about-section:hover h4 {
@@ -102,9 +109,7 @@
 
 .project--about-section--p {
   position: relative;
-  overflow-y: scroll;
   scrollbar-width: none;
-  height: 60px;
 }
 .project--about-section p {
   font-size: 14px;
@@ -112,6 +117,7 @@
   line-height: 15.36px;
   text-align: left;
   margin: 0px;
+  line-height: 1.5em;
 }
 
 .project--description {
