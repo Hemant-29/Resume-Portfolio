@@ -8,6 +8,7 @@ import MusicImage from "../assets/MusicApp.png";
 import TicImage from "../assets/TicTacToe2.png";
 import CtaeMapsImage from "../assets/mapProject.png";
 import StoreImage from "../assets/screenshot_store.png";
+import telestreamImage from "../assets/telestream3.png";
 
 export default function MainBody(props) {
   const [classname, setClassName] = useState(".main-body");
@@ -69,6 +70,13 @@ export default function MainBody(props) {
         <h2>Projects</h2>
         <div className="project-container">
           <ProjectsCard
+            name="TeleStream Video Streaming Platform"
+            image={telestreamImage}
+            website="https://tele-stream.vercel.app/"
+            tech="React.js, Node.js, Express.js, MongoDb Atlas, cloudinary, Multer"
+            aboutText="TeleStream is a full-stack video streaming platform inspired by modern video-sharing services, designed to allow users to upload, watch, and interact with video content in real time. Built with React.js on the frontend and Node.js with Express.js on the backend, the platform features secure user authentication, profile management, and RESTful APIs for seamless data exchange. A key highlight of the application is its support for adaptive bitrate streaming, enabling videos to automatically adjust their quality based on the user’s internet bandwidth to ensure smooth and uninterrupted playback. Videos are stored and streamed using Cloudinary, allowing efficient media handling and optimized delivery. Users can like, comment on videos, subscribe to channels, and manage their profiles. The application is deployed with Vercel for the frontend and Render for the backend, providing a responsive and scalable hosting environment. This project demonstrates practical experience with media streaming, authentication, and full-stack architecture."
+          ></ProjectsCard>
+          <ProjectsCard
             name="Full-Stack Store Website"
             image={StoreImage}
             website="https://the-store-app.vercel.app/"
@@ -91,19 +99,20 @@ export default function MainBody(props) {
             tech="Python, PyQt5"
             aboutText="A sleek and elegent music app which can help you browse and listen to songs on your drive"
           ></ProjectsCard>
-          <ProjectsCard
-            name="Tic-Tac-Toe"
-            image={TicImage}
-            website="https://github.com/Hemant-29/Project-TicTacToe"
-            tech="HTML, CSS, Javascript"
-            aboutText="This is a classic game of Tic-Tac-Toe which can be played by 2 users."
-          ></ProjectsCard>
+
           <ProjectsCard
             name="C.T.A.E College Maps"
             image={CtaeMapsImage}
             website="https://github.com/Hemant-29/CTAE_Maps"
             tech="HTML, CSS, Javascript, Leaflet, Open Street Maps"
             aboutText="A College Maps website. Made this as a Hackathon Project. It has features to identify various college building and provide their floor-plan so that students can search for any Lab or Classroom from their home."
+          ></ProjectsCard>
+          <ProjectsCard
+            name="Tic-Tac-Toe"
+            image={TicImage}
+            website="https://github.com/Hemant-29/Project-TicTacToe"
+            tech="HTML, CSS, Javascript"
+            aboutText="This is a classic game of Tic-Tac-Toe which can be played by 2 users."
           ></ProjectsCard>
         </div>
       </div>
